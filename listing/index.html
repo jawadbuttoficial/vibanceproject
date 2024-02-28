@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listing</title>
+
+  <!-- bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- tabs navigation Start -->
+  <ul class="nav nav-pills mb-5 listing_tabs mx-lg-3" id="pills-tab" role="tablist">
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-featured-listing" data-bs-toggle="pill"
+        data-bs-target="#featured-listing" type="button" role="tab" aria-controls="featured-listing"
+        aria-selected="true">Featured</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-all-listing" data-bs-toggle="pill" data-bs-target="#all-listing" type="button"
+        role="tab" aria-controls="all-listing" aria-selected="false">All listings</button>
+    </li>
+
+  </ul>
+  <!-- tabs navigation End -->
+
+
+
+  <!-- Filters Start -->
+  <div class="filters px-lg-3">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle filter-large-screens" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Type <i class="bi bi-chevron-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else </a></li>
+      </ul>
+
+      <button class="btn dropdown-toggle filter-large-screens" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Price <i class="bi bi-chevron-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else </a></li>
+      </ul>
+
+      <button class="btn dropdown-toggle filter-large-screens" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Highlights <i class="bi bi-chevron-down"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else </a></li>
+      </ul>
+
+      <button class="btn dropdown-toggle filter-large-screens" type="button" aria-expanded="false">
+        <i class="bi bi-star"></i> Favorites
+      </button>
+
+      <button class="btn dropdown-toggle filter-large-screens" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="bi bi-sliders"></i> More Filters
+      </button>
+
+      <button class="btn dropdown-toggle filters-small-screen" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="bi bi-sliders"></i> Filters
+      </button>
+
+    </div>
+    <div class="search-form">
+      <div class="search-bar">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="search">
+        <i class="bi bi-search"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- offcanvas filters -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">More Filters</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        All the filter will appers Here
+      </div>
+    </div>
+  </div>
+  <!-- Filters End -->
+
+
+
+  <!-- tabs Content Start -->
+
+  <div class="tab-content" id="pills-tabContent">
+
+    <div class="tab-pane fade show active" id="featured-listing" role="tabpanel"
+      aria-labelledby="pills-featured-listing" tabindex="0">
+
+      <div class="listings">
+        <div class="container-fluid m-sm-0 m-md-0">
+          <div class="row p-sm-0 m-sm-0">
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4 listing-card-single">
+              <div class="card listing-inner">
+                <div class="card-body listing">
+                  <div class="listing-card-header mb-4">
+                    <div class="listing-name d-flex gap-3 align-items-center m-0 p-0">
+                      <img src="Image Placeholder.png" alt="">
+                      <h5 class="m-0 p-0">Mobile</h5>
+                    </div>
+
+                    <div class="listing-actions">
+                      <img src="Hide.png" alt="" srcset="">
+                      <img src="Star.png" alt="" srcset="">
+                    </div>
+                  </div>
+                  <p class="listing-desc mb-4">Award-winning health assistant who makes advanced health data analytics simple and fun.</p>
+                  <div class="listing-data">
+                    <div class="ttm-revenue">
+                      <p class="mb-1">ttm revenue</p>
+                      <h4 class="mb-0">$6k</h4>
+                    </div>
+                    <div class="ttm-profit">
+                      <p class="mb-1">ttm profit</p>
+                      <h4 class="mb-0">$5k</h4>
+                    </div>
+                    <div class="Asking-price">
+                      <p class="mb-1">Asking Price</p>
+                      <h4 class="mb-0">$10k</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pagination-container">
+      <div class="pagination"></div>
+    </div>
+    
+
+    <div class="tab-pane fade" id="all-listing" role="tabpanel" aria-labelledby="pills-all-listing" tabindex="0">
+
+
+    </div>
+
+  </div>
+
+  <!-- tabs Content End -->
+
+
+
+  <!-- bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+
+$(document).ready(function () {
+  // Set the number of items per page
+    var itemsPerPage = 12;
+
+    // Hide all cards initially
+    $('.listing-card-single').hide();
+
+    // Show the first set of cards based on the itemsPerPage value
+    $('.listing-card-single:lt(' + itemsPerPage + ')').show();
+
+    // Calculate the total number of pages
+    var totalPages = Math.ceil($('.listing-card-single').length / itemsPerPage);
+
+    // Create pagination buttons
+    for (var i = 1; i <= totalPages; i++) {
+      $('.pagination').append('<button class="page-btn">' + i + '</button>');
+    }
+
+    // Add click event to pagination buttons
+    $('.page-btn').click(function () {
+      var pageNumber = $(this).text();
+
+      // Hide all cards
+      $('.listing-card-single').hide();
+
+      // Show the cards for the selected page
+      var startIndex = (pageNumber - 1) * itemsPerPage;
+      var endIndex = startIndex + itemsPerPage;
+      $('.listing-card-single').slice(startIndex, endIndex).show();
+    });
+  });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
